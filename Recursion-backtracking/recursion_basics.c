@@ -116,3 +116,73 @@
 //     printf("%d",facto(5));
 // }
 
+
+//JAVA FINDING PALINDROME RECURSION
+// import java.lang.*;
+// import java.util.*;
+
+// public class java {
+
+//     static String tester = "ABCDEECBA";
+//     static int stringsize = tester.length();
+
+//     static boolean ispalindrome(int i){
+//         if(i>=stringsize/2){
+//             return true;
+//         }
+
+//         if(tester.charAt(i)!=tester.charAt(stringsize-i-1)){
+//             return false;
+//         }
+
+//         return ispalindrome(i+1); //when both cases dont occur, i.e neither do we cross halfway nor do we break because they are same
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(ispalindrome(0));
+//     } 
+// }
+
+//fibonacci using iteration
+
+// import java.util.*;
+// import java.lang.*;
+// import java.io.*;
+
+
+// class recursion_basics_java{
+//     public static void main(String[] args) {
+//         List<Integer> fibolist = new ArrayList<>();
+
+//         fibolist.add(0);
+//         fibolist.add(1);
+//             //printing first 20 fibonacci terms
+//         for(int i=2;i<22;i++){
+//             fibolist.add(fibolist.get(i-2)+fibolist.get(i-1)); //adding the next number at the ith index
+//         }
+
+//         for(Integer k: fibolist){
+//             System.out.println(k);
+//         }
+//     }
+// }
+
+
+
+//fibonacci using recursion
+// int fibo(int n){
+//     if(n<=1){
+//         return n;
+//     }
+
+//     int last = fibo(n-2);
+//     int first = fibo(n-1);
+
+//     return last+first;
+// }
+
+// int main(){
+//     printf("%d\n",fibo(10));
+// }
+
+
